@@ -1,0 +1,216 @@
+/* correctly rearrange classes order */
+
+body {
+    background-color: rgb(23, 23, 23);
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+
+.ocean {
+    position: absolute;
+    top: 8em;
+    transform: scaleY(-1);
+    height: 5%;
+    background: #015871;
+}
+
+.wave {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+    position: absolute;
+    top: 0;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+    top: 0;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+        swell 7s ease -1.25s infinite;
+    opacity: 1;
+}
+
+@keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes swell {
+
+    0%,
+    100% {
+        transform: translate3d(0, -25px, 0);
+    }
+
+    50% {
+        transform: translate3d(0, 5px, 0);
+    }
+}
+
+.title-container {
+    display: flex;
+}
+
+.box {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 750px;
+    min-height: 340px;
+    z-index: 2;
+    background-color: rgb(23, 23, 23);
+}
+
+.box-container,
+.bobble {
+    background-color: snow;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    z-index: 1;
+}
+
+.box-container {
+    overflow: hidden;
+}
+
+.bobble-container {
+    display: flex;
+    margin: 3em;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.bobble {
+    background-color: rgb(23, 23, 23);
+    min-width: 400px;
+    min-height: 250px;
+    max-width: 400px;
+    max-height: 250px;
+    border: solid snow 2px;
+    scale: 75%;
+    opacity: 0;
+}
+
+.inside-bobble {
+    margin-top: -15em;
+}
+
+.inside-box {
+    position: absolute;
+    background-color: rgb(23, 23, 23);
+    z-index: 0;
+    margin: -2px;
+    width: 50px;
+    height: 50px;
+    scale: 0;
+    animation: removeInsideBox 1s ease-in-out forwards;
+}
+
+@keyframes removeInsideBox {
+    from {
+        scale: 0;
+        opacity: 0;
+    }
+
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+
+#bobbleOne {
+    animation: growBox 1s .4s ease-in-out forwards;
+}
+
+#bobbleOne .inside-bobble {
+    animation: text-slide 1s 1.4s ease-in-out forwards;
+}
+
+
+#bobbleTwo {
+    animation: growBox 1s .6s ease-in-out forwards;
+}
+
+#bobbleTwo .inside-bobble {
+    animation: text-slide 1s 1.6s ease-in-out forwards;
+}
+
+#bobbleThree {
+    animation: growBox 1s .25s ease-in-out forwards;
+}
+
+#bobbleThree .inside-bobble {
+    animation: text-slide 1s 1.25s ease-in-out forwards;
+}
+
+@keyframes growBox {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+@keyframes text-slide {
+    0% {
+        margin-top: -15em;
+    }
+
+    40% {
+        margin-top: 0;
+    }
+
+    55% {
+        margin-top: -1em;
+    }
+
+    65% {
+        margin-top: 0;
+    }
+
+    75% {
+        margin-top: -.75em;
+    }
+
+    85% {
+        margin-top: 0;
+    }
+
+    95% {
+        margin-top: -.5em;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+
+    /* 89% {
+        margin-top: -.25em;
+    }
+
+    91% {
+        margin-top: 0;
+    } */
+
+    100% {
+        margin-top: 0;
+    }
+
+}
