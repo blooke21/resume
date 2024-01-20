@@ -1,10 +1,32 @@
 /* correctly rearrange classes order */
+:root {
+    --box-border: 2px;
+}
+
 
 body {
+    margin: 0;
     background-color: rgb(23, 23, 23);
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
+    filter: brightness(80%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.spotlight {
+    /* display: none; */
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: radial-gradient(circle,
+            transparent 160px,
+            rgba(0, 0, 0, 1) 14rem);
+    z-index: 999;
+    background-position: 35em -10em;
+}
+
 
 
 .ocean {
@@ -19,6 +41,7 @@ body {
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
     position: absolute;
     top: 0;
+    left: -36em;
     width: 6400px;
     height: 198px;
     animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
@@ -56,6 +79,7 @@ body {
 
 .title-container {
     display: flex;
+    margin-top: 1em;
 }
 
 .box {
@@ -63,8 +87,8 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    min-width: 750px;
-    min-height: 340px;
+    width: 46.875rem;
+    height: 21.25rem;
     z-index: 2;
     background-color: rgb(23, 23, 23);
 }
@@ -75,7 +99,7 @@ body {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    padding: 2px;
+    padding: var(--box-border);
     z-index: 1;
 }
 
@@ -84,23 +108,24 @@ body {
 }
 
 .bobble-container {
-    display: flex;
-    margin: 3em;
+    margin-top: 3em;
     color: #fff;
     display: flex;
     text-align: center;
     overflow: hidden;
+    flex-wrap: wrap;
 }
 
 
 .bobble {
     background-color: rgb(23, 23, 23);
-    min-width: 400px;
-    min-height: 250px;
-    max-width: 400px;
-    max-height: 250px;
-    border: solid snow 2px;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 25rem;
+    height: 15.625rem;
+    border: solid snow var(--box-border);
     scale: 75%;
+    overflow: hidden;
     opacity: 0;
 }
 
@@ -116,7 +141,7 @@ body {
     width: 50px;
     height: 50px;
     scale: 0;
-    animation: removeInsideBox 1s ease-in-out forwards;
+    /* animation: removeInsideBox 1s ease-in-out forwards; */
 }
 
 @keyframes removeInsideBox {
@@ -131,31 +156,6 @@ body {
     }
 }
 
-
-#bobbleOne {
-    animation: growBox 1s .4s ease-in-out forwards;
-}
-
-#bobbleOne .inside-bobble {
-    animation: text-slide 1s 1.4s ease-in-out forwards;
-}
-
-
-#bobbleTwo {
-    animation: growBox 1s .6s ease-in-out forwards;
-}
-
-#bobbleTwo .inside-bobble {
-    animation: text-slide 1s 1.6s ease-in-out forwards;
-}
-
-#bobbleThree {
-    animation: growBox 1s .25s ease-in-out forwards;
-}
-
-#bobbleThree .inside-bobble {
-    animation: text-slide 1s 1.25s ease-in-out forwards;
-}
 
 @keyframes growBox {
     from {
@@ -201,16 +201,39 @@ body {
         margin-top: 0;
     }
 
-    /* 89% {
-        margin-top: -.25em;
-    }
-
-    91% {
-        margin-top: 0;
-    } */
 
     100% {
         margin-top: 0;
     }
 
+}
+
+/* if screen is larger than 1600 px do this */
+@media only screen and (min-width: 1600px) {
+    .title-container {
+        margin-top: 6em;
+    }
+}
+
+/* if screen is smaller than 500 px do this */
+@media only screen and (max-width: 500px) {
+    .spotlight {
+        background-image: radial-gradient(circle,
+                transparent 120px,
+                rgba(0, 0, 0, 1) 9rem);
+        background-position: 0em 0em;
+    }
+
+    .box,
+    .bobble {
+        width: 21.875rem;
+    }
+
+    .bobble-container {
+        margin-top: 1em;
+    }
+
+    .bobble {
+        margin-top: .5em;
+    }
 }
