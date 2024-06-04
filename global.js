@@ -21,6 +21,15 @@ $(document).ready(function () {
   //will add cookie check to see if it is users first time
   //if users first time play spotlight animation and delay all other start-up animations by 1s
   var firstTime = false;
+  var darkMode = false;
+
+  if (darkMode) {
+    $("body").css({ "background": "radial-gradient(ellipse at center,rgb(76, 76, 75) 0%,rgb(59, 59, 58) 45%,#1a1a1a 100%)" })
+    $(".learn-container").css({ "color": "#fff" })
+    $(".white-line").css({ "background-color": "#fff" })
+  } else {
+    $("body").css({ "background": "radial-gradient(ellipse at center,rgba(255, 254, 234, 1) 0%,rgba(255, 254, 234, 1) 45%,#b7e8eb 100%)" })
+  }
 
   //contains variables for startup animation delays and timing
   var setupTiming = [
@@ -226,6 +235,10 @@ $(document).ready(function () {
     $(".box-text").children().addClass("title-container-setup")
     $(".bobble").addClass("bobble-setup")
     $(".inside-bobble").css({ "margin-top": "-15em" })
+
+    //shrinks learn-more container
+    $(".learn-container h2").css({ "scale": "0" })
+    $(".learn-container .white-line").css({ "width": "0" })
 
 
     //calls animation to run on users first time visting 
