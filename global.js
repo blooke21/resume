@@ -21,7 +21,8 @@ $(document).ready(function () {
   //will add cookie check to see if it is users first time
   //if users first time play spotlight animation and delay all other start-up animations by 1s
   var firstTime = false;
-  var darkMode = false;
+  //toggle for dark background
+  var darkMode = true;
 
   if (darkMode) {
     $("body").css({ "background": "radial-gradient(ellipse at center,rgb(76, 76, 75) 0%,rgb(59, 59, 58) 45%,#1a1a1a 100%)" })
