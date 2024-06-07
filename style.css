@@ -1,11 +1,15 @@
 /* correctly rearrange classes order */
+html,
+body {
+  overflow-x: hidden;
+}
 
 body {
   margin: 0;
   height: 100%;
+  width: 100%;
   background-size: 100vw 100vh;
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
   filter: brightness(100%);
   display: flex;
   flex-wrap: wrap;
@@ -16,7 +20,7 @@ body {
   /* display: none; */
   position: absolute;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-image: radial-gradient(circle,
       transparent 160px,
       rgba(0, 0, 0, 1) 14rem);
@@ -43,6 +47,7 @@ body {
   color: #fff;
   border-radius: 1em;
   font-size: 1rem;
+  white-space: nowrap;
 }
 
 .ocean {
@@ -106,7 +111,7 @@ body {
 
 .title-container {
   display: flex;
-  margin-top: 4em;
+  margin-top: 1.5em;
   overflow: hidden;
   position: relative;
 }
@@ -507,26 +512,44 @@ body {
 /* Project Pages _____________________________________________________________________________________________________________ */
 
 
+/* Media Queries */
 
 /* if screen is larger than 1600 px do this */
 @media only screen and (min-width: 1600px) {
   .title-container {
-    /* margin-top: 6em; */
+    margin-top: 4em;
   }
 }
 
 /* if screen is smaller than 500 px do this */
 @media only screen and (max-width: 500px) {
   .spotlight {
+    height: 100%;
     background-image: radial-gradient(circle,
         transparent 120px,
         rgba(0, 0, 0, 1) 9rem);
     background-position: 0em 0em;
   }
 
+  .blue-line {
+    max-width: 160px;
+  }
+
   .box,
   .bobble {
     width: 21.875rem;
+  }
+
+  .box-text {
+    text-align: center;
+  }
+
+  .box-text h2 {
+    font-size: 1em;
+  }
+
+  .box-text h1 {
+    font-size: 1.5em;
   }
 
   .bobble-container {
@@ -535,5 +558,19 @@ body {
 
   .bobble {
     margin-top: 0.5em;
+  }
+
+  .learn-container,
+  .bobble-container {
+    margin-top: unset;
+  }
+
+  #bobbleThree {
+    position: unset;
+  }
+
+
+  .replay-btn {
+    display: none;
   }
 }

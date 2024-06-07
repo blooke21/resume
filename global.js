@@ -20,7 +20,7 @@ $(document).ready(function () {
 
   //will add cookie check to see if it is users first time
   //if users first time play spotlight animation and delay all other start-up animations by 1s
-  var firstTime = false;
+  var firstTime = true;
   //toggle for dark background
   var darkMode = true;
 
@@ -115,7 +115,7 @@ $(document).ready(function () {
     } else { //small screen
       $(".spotlight")
         .animate(
-          { "background-position-x": "3em", "background-position-y": "10em" },
+          { "background-position-x": "3em", "background-position-y": "8em" },
           800
         )
         .promise()
@@ -123,7 +123,7 @@ $(document).ready(function () {
           $(".spotlight").delay(200).animate(
             {
               "background-position-x": "-3em",
-              "background-position-y": "-12em",
+              "background-position-y": "-16em",
             },
             500
           )
@@ -133,7 +133,7 @@ $(document).ready(function () {
           $(".spotlight").delay(200).animate(
             {
               "background-position-x": "3em",
-              "background-position-y": "1em",
+              "background-position-y": "-3em",
             },
             300
           )
@@ -143,7 +143,7 @@ $(document).ready(function () {
           $(".spotlight").delay(200).animate(
             {
               "background-position-x": "7em",
-              "background-position-y": "-7em",
+              "background-position-y": "-11em",
             },
             800
           )
@@ -153,7 +153,7 @@ $(document).ready(function () {
           $(".spotlight").delay(200).animate(
             {
               "background-position-x": "-8em",
-              "background-position-y": "-10em",
+              "background-position-y": "-14em",
             },
             800
           )
@@ -163,7 +163,7 @@ $(document).ready(function () {
           $(".spotlight").animate(
             {
               "background-position-x": "0em",
-              "background-position-y": "-10em",
+              "background-position-y": "-14em",
             },
             200
           )
