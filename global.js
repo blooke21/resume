@@ -20,7 +20,7 @@ $(document).ready(function () {
 
   //will add cookie check to see if it is users first time
   //if users first time play spotlight animation and delay all other start-up animations by 1s
-  var firstTime = true;
+  var firstTime = false;
   //toggle for dark background
   var darkMode = true;
 
