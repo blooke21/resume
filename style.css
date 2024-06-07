@@ -509,6 +509,10 @@ body {
   transition: 1s;
 }
 
+.develop-sm {
+  display: none;
+}
+
 /* Project Pages _____________________________________________________________________________________________________________ */
 
 
@@ -573,4 +577,62 @@ body {
   .replay-btn {
     display: none;
   }
+
+  /* Personal.html */
+
+  .ocean.personal {
+    top: -4em;
+  }
+
+  .title-container.nav {
+    position: unset;
+    left: unset;
+  }
+
+  .title-container {
+    margin-top: .5em;
+  }
+
+  .box-title {
+    margin-top: .5em;
+  }
+
+  .bio-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .fade-card-inside h2 {
+    font-size: 1em;
+  }
+
+  .fade-card {
+    font-size: 12px;
+  }
+
+  .fade-card a {
+    height: unset;
+  }
+
+  /* Developer.html */
+  .ocean.developer {
+    top: 8em;
+  }
+
+  .develop-sm {
+    display: block;
+  }
+
+  .develop-large {
+    display: none;
+  }
+
+  .fade-card.develop a {
+    top: -2.3em;
+  }
+
+  .fade-card.develop a p {
+    margin: -.25em;
+    padding: .75em 0 .5em 0;
+  }
+
 }
