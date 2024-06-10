@@ -15,7 +15,7 @@
 
 <body>
     <div class="wave-container">
-        <div class="ocean personal">
+        <div class="ocean two">
             <div class="wave two"></div>
             <div class="wave two"></div>
         </div>
@@ -27,9 +27,9 @@
                 <div class="box nav">
                     <div class="box-content nav">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="developer.html">Developer</a></li>
-                            <li><a href="RC.html">Resume and Contact</a></li>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="developer.php">Developer</a></li>
+                            <li><a href="RC.php">Resume and Contact</a></li>
                         </ul>
                     </div>
                 </div>

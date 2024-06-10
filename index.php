@@ -58,20 +58,20 @@
     </div>
     <div class="bobble-container">
 
-        <a href="/resume-main/personal.html" class="bobble" id="bobbleTwo">
+        <a href="personal.php" class="bobble" id="bobbleTwo">
             <div class="inside-bobble">
                 <h1>A Person</h1>
                 <p>This is where I brag about how cool I am</p>
             </div>
         </a>
-        <a href="/resume-main/developer.html" class="bobble" id="bobbleOne">
+        <a href="developer.php" class="bobble" id="bobbleOne">
             <div class="inside-bobble">
                 <h1>A Developer</h1>
                 <p>This is where I showcase some of my more recent projects</p>
             </div>
         </a>
     </div>
-    <a href="/resume-main/RC.html" class="bobble" id="bobbleThree">
+    <a href="RC.php" class="bobble" id="bobbleThree">
         <div class="inside-bobble">
             <h1>Resume and Contact information</h1>
         </div>
