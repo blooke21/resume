@@ -6,9 +6,6 @@ body {
   background-size: 100vw 100vh;
   font-family: "Poppins", sans-serif;
   filter: brightness(100%);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   overflow-x: hidden;
 }
 
@@ -17,9 +14,11 @@ body {
   position: absolute;
   height: 100vh;
   width: 100%;
-  background-image: radial-gradient(circle,
-      transparent 160px,
-      rgba(0, 0, 0, 1) 14rem);
+  background-image: radial-gradient(
+    circle,
+    transparent 160px,
+    rgba(0, 0, 0, 1) 14rem
+  );
   z-index: 999;
   background-position: 35em -10em;
 }
@@ -48,15 +47,15 @@ body {
 
 .ocean {
   position: absolute;
-  top: 8em;
+  top: 5em;
   transform: scaleY(-1);
   height: 5%;
   background: #015871;
 }
 
-
 .wave {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg)
+    repeat-x;
   position: absolute;
   top: 0;
   left: -36em;
@@ -89,7 +88,6 @@ body {
 }
 
 @keyframes swell {
-
   0%,
   100% {
     transform: translate3d(0, -25px, 0);
@@ -158,8 +156,7 @@ body {
 .box-content.nav ul li a {
   text-decoration: none;
   color: #fff;
-  transition-duration: .1s;
-
+  transition-duration: 0.1s;
 }
 
 .box-content.nav ul li a:hover {
@@ -192,7 +189,6 @@ body {
   right: 500px;
   transition-duration: 1.5s;
 }
-
 
 .blue-line {
   background-color: #368294;
@@ -233,9 +229,9 @@ body {
 .learn-container {
   width: 100%;
   margin-top: 1em;
-  /* color: #fff; */
   color: rgb(26, 26, 26);
   text-align: center;
+  height: fit-content;
 }
 
 .learn-container h2 {
@@ -266,7 +262,7 @@ body {
   width: 100%;
   text-align: center;
   overflow: hidden;
-  padding: .5em;
+  padding: 0.5em;
 }
 
 .bobble-setup {
@@ -299,8 +295,9 @@ body {
 
 #bobbleThree {
   height: fit-content;
-  position: absolute;
-  bottom: -3em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .inside-bobble {
@@ -309,12 +306,12 @@ body {
 
 .inside-bobble h1 {
   background-color: #368294;
-  padding: .25em;
+  padding: 0.25em;
   margin: 0;
 }
 
 .inside-bobble p {
-  padding: 0em .5em 0em .5em;
+  padding: 0em 0.5em 0em 0.5em;
 }
 
 .inside-box {
@@ -421,7 +418,6 @@ body {
   margin-top: 0;
 }
 
-
 .fade-card {
   margin: 1em;
   opacity: 0;
@@ -470,7 +466,6 @@ body {
   text-decoration: line-through;
 }
 
-
 .fade-card.showcase.develop {
   margin-top: 2em;
 }
@@ -500,7 +495,7 @@ body {
   z-index: 2;
   text-align: center;
   background-color: #368394d6;
-  padding: .5em;
+  padding: 0.5em;
   transition: 1s;
 }
 
@@ -509,7 +504,6 @@ body {
 }
 
 /* Project Pages _____________________________________________________________________________________________________________ */
-
 
 /* Media Queries */
 
@@ -522,7 +516,6 @@ body {
 
 /* if screen is smaller than 500 px do this */
 @media only screen and (max-width: 500px) {
-
   html,
   body {
     overflow-x: hidden;
@@ -534,9 +527,11 @@ body {
 
   .spotlight {
     height: 100%;
-    background-image: radial-gradient(circle,
-        transparent 120px,
-        rgba(0, 0, 0, 1) 9rem);
+    background-image: radial-gradient(
+      circle,
+      transparent 120px,
+      rgba(0, 0, 0, 1) 9rem
+    );
     background-position: 0em 0em;
   }
 
@@ -547,6 +542,10 @@ body {
   .box,
   .bobble {
     width: 21.875rem;
+  }
+
+  .bobble-container {
+    width: unset;
   }
 
   .box-text {
@@ -578,7 +577,6 @@ body {
     position: unset;
   }
 
-
   .replay-btn {
     display: none;
   }
@@ -599,11 +597,11 @@ body {
   }
 
   .title-container {
-    margin-top: .5em;
+    margin-top: 0.5em;
   }
 
   .box-title {
-    margin-top: .5em;
+    margin-top: 0.5em;
   }
 
   .bio-title {
@@ -644,8 +642,7 @@ body {
   }
 
   .fade-card.develop a p {
-    margin: -.25em;
-    padding: .75em 0 .5em 0;
+    margin: -0.25em;
+    padding: 0.75em 0 0.5em 0;
   }
-
 }
