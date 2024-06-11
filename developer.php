@@ -43,7 +43,7 @@
             <p>Here's the Proof </p>
         </div>
         <div class="fade-card showcase develop">
-            <a class="develop-large" href="projects/bee.html"><img src="images/placeholder3.jpg" alt="">
+            <a class="develop-large" href="projects/bee.php"><img src="images/BusyBee.png" alt="">
                 <p>Click Here to Learn More</p>
             </a>
             <a class="develop-sm" href="projects/bee.html"><img src="images/placeholder3-sm.jpg" alt="">
