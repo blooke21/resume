@@ -46,7 +46,7 @@
             <a class="develop-large" href="projects/bee.php"><img src="images/BusyBee.png" alt="">
                 <p>Click Here to Learn More</p>
             </a>
-            <a class="develop-sm" href="projects/bee.html"><img src="images/placeholder3-sm.jpg" alt="">
+            <a class="develop-sm" href="projects/bee.html"><img src="images/BusyBee.png" alt="">
                 <p>Click Here to Learn More</p>
             </a>
             <div class="fade-card-inside right">
@@ -61,29 +61,29 @@
         <div class="fade-card develop">
 
             <div class="fade-card-inside left">
-                <h2>From the Badlands to Boston, the Warnocks did roam.</h2>
+                <h2>Library API</h2>
                 <p>During my childhood, my parents were determined to cultivate a love for travel in my brothers and me.
                     Their efforts proved successful, as each summer saw the five of us embarking on a journey to a
                     seemingly
                     random corner of the United States.
                 </p>
             </div>
-            <a class="develop-large" href="projects/bee.html"><img src="images/placeholder3.jpg" alt="">
+            <a class="develop-large" href="projects/api.html"><img src="images/API.png" alt="">
                 <p>Click Here to Learn More</p>
             </a>
-            <a class="develop-sm" href="projects/bee.html"><img src="images/placeholder3-sm.jpg" alt="">
+            <a class="develop-sm" href="projects/api.html"><img src="images/API.png" alt="">
                 <p>Click Here to Learn More</p>
             </a>
         </div>
         <div class="fade-card develop">
-            <a class="develop-large" href="projects/bee.html"><img src="images/placeholder3.jpg" alt="">
+            <a class="develop-large" href="projects/cluster.php"><img src="images/Cluster.png" alt="">
                 <p>Click Here to Learn More</p>
             </a>
-            <a class="develop-sm" href="projects/bee.html"><img src="images/placeholder3-sm.jpg" alt="">
+            <a class="develop-sm" href="projects/cluster.php"><img src="images/Cluster.png" alt="">
                 <p>Click Here to Learn More</p>
             </a>
             <div class="fade-card-inside right">
-                <h2>Quick Fun Facts</h2>
+                <h2>LTC Degree Cluster Pages</h2>
                 <p> <span class="fun-fact">Hobbies</span>- In my free time, I enjoy playing video games, relaxing with
                     some reading,
                     going for a run,

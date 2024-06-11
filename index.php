@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<!-- todo fix all alt tag -->
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" , minimum-scale="1" />
@@ -30,7 +29,7 @@
             <div class="inside-box"></div>
             <div class="box">
                 <div class="box-content">
-                    <div class="box-img"><img id="me" src="res-me4.jpg" alt=""></div>
+                    <div class="box-img"><img id="me" src="images/res-me4.jpg" alt="portrait of Blake Warnock"></div>
                     <div class="box-text">
                         <h2 class="box-text-title2">WELCOME TO MY PORTFOLIO!</h2>
                         <h1 class="box-text-title">My name is Blake Warnock</h1>
@@ -39,12 +38,6 @@
                             because I am too lazy to
                             actually come up with
                             meaningful information to put here</p>
-                        <!-- <p class="box-text-two">This is some filler text that I am typing in because I am too lazy to
-                            actually come up with
-                            meaningful information to put here</p>
-                        <p class="box-text-three">This is some filler text that I am typing in because I am too lazy to
-                            actually come up with
-                            meaningful information to put here</p> -->
                     </div>
                 </div>
 

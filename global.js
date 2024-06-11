@@ -18,35 +18,45 @@ $(document).ready(function () {
     return Math.floor(Math.random() * num);
   }
 
-  //will add cookie check to see if it is users first time
   //if users first time play spotlight animation and delay all other start-up animations by 1s
   var firstTime = false;
   //toggle for dark background
   var darkMode = true;
 
   if (darkMode) {
-    $("body").css({ "background": "radial-gradient(ellipse at center,rgb(76, 76, 75) 0%,rgb(59, 59, 58) 45%,#1a1a1a 100%)" })
-    $(".learn-container").css({ "color": "#fff" })
-    $(".white-line").css({ "background-color": "#fff" })
+    $("body").css({
+      background:
+        "radial-gradient(ellipse at center,rgb(76, 76, 75) 0%,rgb(59, 59, 58) 45%,#1a1a1a 100%)",
+    });
+    $(".learn-container").css({ color: "#fff" });
+    $(".white-line").css({ "background-color": "#fff" });
   } else {
-    $("body").css({ "background": "radial-gradient(ellipse at center,rgba(255, 254, 234, 1) 0%,rgba(255, 254, 234, 1) 45%,#b7e8eb 100%)" })
+    $("body").css({
+      background:
+        "radial-gradient(ellipse at center,rgba(255, 254, 234, 1) 0%,rgba(255, 254, 234, 1) 45%,#b7e8eb 100%)",
+    });
   }
 
   //contains variables for startup animation delays and timing
   var setupTiming = [
-    insideBoxDelay = 1,
+    (insideBoxDelay = 1),
     //used to control bobbles delay timing
-    boxGrowTime = 1.5,
+    (boxGrowTime = 1.5),
     //sets the box-text delay and duration
-    BoxTextDelay = 500,
-    BoxTextDuration = 800,
-    windowWidth = $(window).width()
-  ]
+    (BoxTextDelay = 500),
+    (BoxTextDuration = 800),
+    (windowWidth = $(window).width()),
+  ];
 
   //stores spotlight animation and other start up animations
   function runStartAnimation(setupTiming) {
-    let [insideBoxDelay, boxGrowTime, BoxTextDelay, BoxTextDuration, windowWidth] = setupTiming
-    console.log("ran spotlight")
+    let [
+      insideBoxDelay,
+      boxGrowTime,
+      BoxTextDelay,
+      BoxTextDuration,
+      windowWidth,
+    ] = setupTiming;
     $(".spotlight").css({ display: "block" });
     //adds extra delay for spotlight animation
     insideBoxDelay += 4.5;
@@ -54,7 +64,8 @@ $(document).ready(function () {
     BoxTextDelay += 4500;
     //moves spotlight around
     //two different animation depending on screen width
-    if (windowWidth >= 500) { //big screen
+    if (windowWidth >= 500) {
+      //big screen
       $(".spotlight")
         .animate(
           { "background-position-x": "-20em", "background-position-y": "5em" },
@@ -112,7 +123,8 @@ $(document).ready(function () {
         )
         .promise()
         .done($(".spotlight").delay(200).animate({ opacity: "0" }, 500));
-    } else { //small screen
+    } else {
+      //small screen
       $(".spotlight")
         .animate(
           { "background-position-x": "3em", "background-position-y": "8em" },
@@ -170,29 +182,46 @@ $(document).ready(function () {
         )
         .promise()
         .done($(".spotlight").delay(200).animate({ opacity: "0" }, 500))
-        .promise().done($("#me").css("margin-right", "auto"));
+        .promise()
+        .done($("#me").css("margin-right", "auto"));
     }
-
-    console.log("Window Width: " + windowWidth);
 
     //sets the text inside box-texts delay ensuring it occurs after box-text is visable
     var BoxTextInsideDelay = BoxTextDelay + BoxTextDuration;
 
     //box with picture and name animations
-    $(".box-text").delay(BoxTextDelay).toggle(BoxTextDuration)
-    $(".box-text-title").delay(BoxTextInsideDelay - 800).animate({ right: "0" })
-    $(".blue-line").delay(BoxTextInsideDelay - 500).animate({ right: "0" }).promise().done(
-      $(".blue-line").delay(1000).animate({ width: "420px" }, 400)
-    )
-    $(".box-text-title2").delay(BoxTextInsideDelay - 200).animate({ right: "0" })
-    $(".box-text-one").delay(BoxTextInsideDelay).animate({ right: "0" })
-    $(".box-text-two").delay(BoxTextInsideDelay + 100).animate({ right: "0" })
-    $(".box-text-three").delay(BoxTextInsideDelay - 200).animate({ right: "0" })
-    $(".learn-container h2").delay(BoxTextInsideDelay + 800).animate({ scale: "1" }, 500).promise().done(
-      $(".white-line").delay(BoxTextInsideDelay + 1100).animate({ width: "316px" }, 600)
-    )
+    $(".box-text").delay(BoxTextDelay).toggle(BoxTextDuration);
+    $(".box-text-title")
+      .delay(BoxTextInsideDelay - 800)
+      .animate({ right: "0" });
+    $(".blue-line")
+      .delay(BoxTextInsideDelay - 500)
+      .animate({ right: "0" })
+      .promise()
+      .done($(".blue-line").delay(1000).animate({ width: "420px" }, 400));
+    $(".box-text-title2")
+      .delay(BoxTextInsideDelay - 200)
+      .animate({ right: "0" });
+    $(".box-text-one").delay(BoxTextInsideDelay).animate({ right: "0" });
+    $(".box-text-two")
+      .delay(BoxTextInsideDelay + 100)
+      .animate({ right: "0" });
+    $(".box-text-three")
+      .delay(BoxTextInsideDelay - 200)
+      .animate({ right: "0" });
+    $(".learn-container h2")
+      .delay(BoxTextInsideDelay + 800)
+      .animate({ scale: "1" }, 500)
+      .promise()
+      .done(
+        $(".white-line")
+          .delay(BoxTextInsideDelay + 1100)
+          .animate({ width: "316px" }, 600)
+      );
 
-    $(".replay-btn").delay(BoxTextInsideDelay + 800).animate({ opacity: "1" }, 900)
+    $(".replay-btn")
+      .delay(BoxTextInsideDelay + 800)
+      .animate({ opacity: "1" }, 900);
 
     $(".inside-box")
       .css({
@@ -209,13 +238,16 @@ $(document).ready(function () {
       animation: "growBox 1s " + boxGrowTime + "s ease-in-out forwards",
     });
     $("#bobbleTwo").css({
-      animation: "growBox 1s " + (boxGrowTime + 0.35) + "s ease-in-out forwards",
+      animation:
+        "growBox 1s " + (boxGrowTime + 0.35) + "s ease-in-out forwards",
     });
     $("#bobbleThree").css({
-      animation: "growBox 1s " + (boxGrowTime + 0.15) + "s ease-in-out forwards",
+      animation:
+        "growBox 1s " + (boxGrowTime + 0.15) + "s ease-in-out forwards",
     });
     $("#bobbleOne .inside-bobble").css({
-      animation: "text-slide 1s " + (boxGrowTime + 1) + "s ease-in-out forwards",
+      animation:
+        "text-slide 1s " + (boxGrowTime + 1) + "s ease-in-out forwards",
     });
     $("#bobbleTwo .inside-bobble").css({
       animation:
@@ -229,26 +261,25 @@ $(document).ready(function () {
 
   $("#replay").click(function () {
     //delete cookies and reload page
-  })
+  });
 
   if (firstTime) {
     //adds setup classes
-    $(".box-text").children().addClass("title-container-setup")
-    $(".bobble").addClass("bobble-setup")
-    $(".inside-bobble").css({ "margin-top": "-15em" })
+    $(".box-text").children().addClass("title-container-setup");
+    $(".bobble").addClass("bobble-setup");
+    $(".inside-bobble").css({ "margin-top": "-15em" });
 
     //shrinks learn-more container
-    $(".learn-container h2").css({ "scale": "0" })
-    $(".learn-container .white-line").css({ "width": "0" })
+    $(".learn-container h2").css({ scale: "0" });
+    $(".learn-container .white-line").css({ width: "0" });
 
-
-    //calls animation to run on users first time visting 
+    //calls animation to run on users first time visting
     runStartAnimation(setupTiming);
   } else {
     //if it isn't the users first time on the page do not play spotlight animation and do not add delay to start-up animation
     $(".spotlight").css({ display: "none" });
     $(".box-text").css({ display: "block" });
-    $(".blue-line").width("unset")
+    $(".blue-line").width("unset");
   }
 
   //sets boxPadding equal to box-container for inside-box animation
@@ -273,10 +304,6 @@ $(document).ready(function () {
       parseInt(boxPaddingNum);
     console.log("width: " + width + "\nheight: " + height);
 
-    // 0 = box will be on top-left
-    // 1 = box will be on top-right
-    // 2 = bottom-right
-    // 3 = bottom-left
     if (ranLocation == 1) {
       $(this).find(".inside-box").css("margin-left", width);
       console.log("top-right");
@@ -392,8 +419,7 @@ $(document).ready(function () {
             break;
         }
       },
-      function () { }
+      function () {}
     );
   });
-
 });
