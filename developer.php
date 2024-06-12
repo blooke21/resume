@@ -43,10 +43,10 @@
             <p>Here's the Proof </p>
         </div>
         <div class="fade-card showcase develop">
-            <a class="develop-large" href="projects/bee.php"><img src="images/BusyBee.png" alt="">
+            <a class="develop-large landscape" href="projects/bee.php"><img src="images/BusyBeeSm.png" alt="">
                 <p>Click Here to Learn More</p>
             </a>
-            <a class="develop-sm" href="projects/bee.html"><img src="images/BusyBee.png" alt="">
+            <a class="develop-sm" href="projects/bee.html"><img src="images/BusyBeeSm.png" alt="">
                 <p>Click Here to Learn More</p>
             </a>
             <div class="fade-card-inside right">
@@ -68,18 +68,18 @@
                     random corner of the United States.
                 </p>
             </div>
-            <a class="develop-large" href="projects/api.html"><img src="images/API.png" alt="">
+            <a class="develop-large portrait" href="projects/api.html"><img src="images/APISm.png" alt="">
                 <p>Click Here to Learn More</p>
             </a>
-            <a class="develop-sm" href="projects/api.html"><img src="images/API.png" alt="">
+            <a class="develop-sm" href="projects/api.html"><img src="images/APISm.png" alt="">
                 <p>Click Here to Learn More</p>
             </a>
         </div>
         <div class="fade-card develop">
-            <a class="develop-large" href="projects/cluster.php"><img src="images/Cluster.png" alt="">
+            <a class="develop-large landscape" href="projects/cluster.php"><img src="images/clusterSm.png" alt="">
                 <p>Click Here to Learn More</p>
             </a>
-            <a class="develop-sm" href="projects/cluster.php"><img src="images/Cluster.png" alt="">
+            <a class="develop-sm" href="projects/cluster.php"><img src="images/clusterSm.png" alt="">
                 <p>Click Here to Learn More</p>
             </a>
             <div class="fade-card-inside right">
@@ -89,14 +89,6 @@
                     going for a run,
                     or having
                     a drink with friends and family.</p>
-
-                <p> <span class="fun-fact">Bad<span class="line-through">ger</span> Boy State</span>-
-                    In 2017, I had the "honor" of attending Badger Boys State. Badger Boy State is an immersive program
-                    that gathers high school juniors for a two-week experience at a college. Participants undergo
-                    comprehensive instruction and, by the program's second week, have gained the skills to effectively
-                    manage and govern a simulated new addition to the United States, the 51st state.
-                </p>
-
             </div>
         </div>
 

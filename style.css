@@ -14,11 +14,9 @@ body {
   position: absolute;
   height: 100vh;
   width: 100%;
-  background-image: radial-gradient(
-    circle,
-    transparent 160px,
-    rgba(0, 0, 0, 1) 14rem
-  );
+  background-image: radial-gradient(circle,
+      transparent 160px,
+      rgba(0, 0, 0, 1) 14rem);
   z-index: 999;
   background-position: 35em -10em;
 }
@@ -58,8 +56,7 @@ body {
 }
 
 .wave {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg)
-    repeat-x;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
   position: absolute;
   top: 0;
   left: -36em;
@@ -92,6 +89,7 @@ body {
 }
 
 @keyframes swell {
+
   0%,
   100% {
     transform: translate3d(0, -25px, 0);
@@ -489,8 +487,15 @@ body {
 .fade-card a {
   text-decoration: none;
   color: white;
-  height: 668px;
   overflow: hidden;
+}
+
+.fade-card .develop-large.landscape {
+  height: 322px;
+}
+
+.fade-card .develop-large.portrait {
+  height: 660px;
 }
 
 .fade-card a p {
@@ -501,6 +506,7 @@ body {
   background-color: #368394d6;
   padding: 0.5em;
   transition: 1s;
+  transition-duration: 1s;
 }
 
 .develop-sm {
@@ -520,6 +526,7 @@ body {
 
 /* if screen is smaller than 500 px do this */
 @media only screen and (max-width: 500px) {
+
   html,
   body {
     overflow-x: hidden;
@@ -531,11 +538,9 @@ body {
 
   .spotlight {
     height: 100%;
-    background-image: radial-gradient(
-      circle,
-      transparent 120px,
-      rgba(0, 0, 0, 1) 9rem
-    );
+    background-image: radial-gradient(circle,
+        transparent 120px,
+        rgba(0, 0, 0, 1) 9rem);
     background-position: 0em 0em;
   }
 
