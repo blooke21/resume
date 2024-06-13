@@ -46,9 +46,6 @@
             <a class="develop-large landscape" href="projects/bee.php"><img src="images/BusyBeeSm.png" alt="">
                 <p>Click Here to Learn More</p>
             </a>
-            <a class="develop-sm" href="projects/bee.html"><img src="images/BusyBeeSm.png" alt="">
-                <p>Click Here to Learn More</p>
-            </a>
             <div class="fade-card-inside right">
                 <h2>Busy Bee Snacks</h2>
                 <p>Busy Bee Snacks is an e-commerce platform born from collaboration, focused on showcasing and selling
@@ -71,15 +68,9 @@
             <a class="develop-large portrait" href="projects/api.html"><img src="images/APISm.png" alt="">
                 <p>Click Here to Learn More</p>
             </a>
-            <a class="develop-sm" href="projects/api.html"><img src="images/APISm.png" alt="">
-                <p>Click Here to Learn More</p>
-            </a>
         </div>
         <div class="fade-card develop">
             <a class="develop-large landscape" href="projects/cluster.php"><img src="images/clusterSm.png" alt="">
-                <p>Click Here to Learn More</p>
-            </a>
-            <a class="develop-sm" href="projects/cluster.php"><img src="images/clusterSm.png" alt="">
                 <p>Click Here to Learn More</p>
             </a>
             <div class="fade-card-inside right">
