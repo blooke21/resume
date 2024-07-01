@@ -49,16 +49,21 @@
             </div>
         </div>
     </nav>
-    <section class="bio">
-        <div class="bio-title">
+    <section class="page-info">
+        <div class="page-title">
             <h1>Busy Bee Snacks</h1>
             <span class="static-line"></span>
             <p>Collaberative E-commerce Website</p>
         </div>
-
-
-
     </section>
+    <section class="project-info">
+        <div class="project-box lang">
+            <h2>Languages</h2>
+        </div>
+    </section>
+
+
+
 </body>
 
 </html>

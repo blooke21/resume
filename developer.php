@@ -36,8 +36,8 @@
             </div>
         </div>
     </nav>
-    <section class="bio">
-        <div class="bio-title">
+    <section class="page-info">
+        <div class="page-title">
             <h1>I've Got the Skills to Pay the Bills...</h1>
             <span class="static-line"></span>
             <p>Here's the Proof </p>

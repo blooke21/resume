@@ -19,7 +19,7 @@ include("header.php");
             </div>
         </div>
     </article>
-    <article class="story-bio">
+    <article class="story-page-info">
         <h1>Our Story</h1>
         <p>In 2023, we launched Busy Bee Snacks as a solution to help families purchase and enjoy healthy snacks while
             on the go.</p>

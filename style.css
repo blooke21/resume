@@ -402,14 +402,14 @@ body {
 }
 
 /* Not Index _____________________________________________________________________________________________________________ */
-.bio {
+.page-info {
   color: #fff;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.bio-title {
+.page-title {
   color: #fff;
   position: relative;
   z-index: 2;
@@ -422,7 +422,7 @@ body {
   width: 50%;
 }
 
-.bio-title h1 {
+.page-title h1 {
   font-size: 2.5rem;
   margin-top: 0;
 }
@@ -522,7 +522,7 @@ body {
 
 /* if screen is smaller than 1920 px do this */
 @media only screen and (max-width: 1920px) {
-  .bio-title {
+  .page-title {
     right: -5em;
   }
 }
@@ -616,11 +616,11 @@ body {
     margin-top: 0.5em;
   }
 
-  .bio-title {
+  .page-title {
     right: unset;
   }
 
-  .bio-title h1 {
+  .page-title h1 {
     font-size: 1.5rem;
   }
 
