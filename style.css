@@ -406,10 +406,11 @@ body {
   color: #fff;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
-.page-title {
+.page-title,
+.project-box {
   color: #fff;
   position: relative;
   z-index: 2;
@@ -417,9 +418,24 @@ body {
   display: block;
   margin-top: 1em;
   border: solid #fff;
-  padding: 1em;
   background: rgb(26, 26, 26);
-  width: 50%;
+}
+
+.page-title {
+  width: 40%;
+  padding: 1em;
+}
+
+.project-box.lang {
+  height: fit-content;
+}
+
+.project-box.lang h2 {
+  font-size: 1.2rem;
+}
+
+.project-box.lang p {
+  font-size: .9rem;
 }
 
 .page-title h1 {
@@ -522,8 +538,15 @@ body {
 
 /* if screen is smaller than 1920 px do this */
 @media only screen and (max-width: 1920px) {
-  .page-title {
+
+  .page-title,
+  .project-box.lang {
     right: -5em;
+  }
+
+  .project-box.lang {
+    padding-right: 1em;
+    padding-left: 1em;
   }
 }
 

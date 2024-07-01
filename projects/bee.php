@@ -55,11 +55,13 @@
             <span class="static-line"></span>
             <p>Collaberative E-commerce Website</p>
         </div>
+        <div class="project-box lang">
+            <h2>Languages Used:</h2>
+            <p>PHP, Jquery, JavaScript, CSS, SQL</p>
+        </div>
     </section>
     <section class="project-info">
-        <div class="project-box lang">
-            <h2>Languages</h2>
-        </div>
+
     </section>
 
 
